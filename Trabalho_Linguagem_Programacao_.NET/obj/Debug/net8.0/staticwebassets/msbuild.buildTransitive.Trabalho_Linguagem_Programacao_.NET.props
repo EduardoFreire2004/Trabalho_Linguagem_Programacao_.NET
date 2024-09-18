@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Trabalho_Linguagem_Programacao_.NET.props" />
+</Project>
