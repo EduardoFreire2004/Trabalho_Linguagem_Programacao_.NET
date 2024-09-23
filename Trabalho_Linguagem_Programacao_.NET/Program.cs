@@ -1,6 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using Trabalho_Linguagem_Programacao_.NET.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<Contexto>(options =>
+       options.UseSqlServer(builder.Configuration.GetConnectionString("conexao")));
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

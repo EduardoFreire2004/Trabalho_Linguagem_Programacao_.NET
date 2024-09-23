@@ -1,0 +1,46 @@
+﻿@model Trabalho_Linguagem_Programacao_.NET.Models.Pedido
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Pedido</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.data)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.data)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cliente)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cliente.nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.produto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.produto.nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.quantidade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.quantidade)
+        </dd>
+    </dl>
+</div>
+<a asp-action="Edit" asp-route-id="@Model?.Id">
+    <input type="submit" value="Editar" class="btn btn-primary" />
+</a>
+
+<a asp-action="Index">
+    <button type="button" class="btn btn-info">Voltar</button>
+</a>

@@ -1,12 +1,252 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\views\\pedidos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:views\\pedidos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\views\\pedidos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:views\\pedidos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\views\\pedidos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:views\\pedidos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\views\\pedidos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:views\\pedidos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\views\\produtos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:views\\produtos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\views\\pedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:views\\pedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\models\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:models\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\models\\contexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:models\\contexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\views\\clientes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:views\\clientes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|c:\\users\\eduga\\onedrive\\documentos\\github\\trabalho_linguagem_programacao_.net\\trabalho_linguagem_programacao_.net\\views\\fornecedores\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7095A52A-D0D5-44D2-B1EA-AA88537B9CA2}|Trabalho_Linguagem_Programacao_.NET.csproj|solutionrelative:views\\fornecedores\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Pedidos\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pedidos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Pedidos\\Create.cshtml",
+              "RelativeToolTip": "Views\\Pedidos\\Create.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T18:32:50.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Pedidos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pedidos\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Pedidos\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Pedidos\\Delete.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAC0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T18:32:08.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Pedidos\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pedidos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Pedidos\\Details.cshtml",
+              "RelativeToolTip": "Views\\Pedidos\\Details.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T18:04:48.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Pedidos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pedidos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Pedidos\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Pedidos\\Edit.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T18:04:19.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Pedidos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pedidos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Pedidos\\Index.cshtml",
+              "RelativeToolTip": "Views\\Pedidos\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T18:02:38.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PedidosController.cs",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Controllers\\PedidosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PedidosController.cs",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Controllers\\PedidosController.cs",
+              "RelativeToolTip": "Controllers\\PedidosController.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAAAH0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T18:01:45.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Contexto.cs",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Models\\Contexto.cs",
+              "RelativeDocumentMoniker": "Models\\Contexto.cs",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Models\\Contexto.cs",
+              "RelativeToolTip": "Models\\Contexto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T17:35:49.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Fornecedor.cs",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Models\\Fornecedor.cs",
+              "RelativeDocumentMoniker": "Models\\Fornecedor.cs",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Models\\Fornecedor.cs",
+              "RelativeToolTip": "Models\\Fornecedor.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T17:28:17.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Models\\Pedido.cs",
+              "RelativeDocumentMoniker": "Models\\Pedido.cs",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Models\\Pedido.cs",
+              "RelativeToolTip": "Models\\Pedido.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T17:22:59.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAlwCAAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T17:19:44.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T17:18:55.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Clientes\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Clientes\\Details.cshtml",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Clientes\\Details.cshtml",
+              "RelativeToolTip": "Views\\Clientes\\Details.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T17:17:43.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Fornecedores\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Fornecedores\\Details.cshtml",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Fornecedores\\Details.cshtml",
+              "RelativeToolTip": "Views\\Fornecedores\\Details.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T17:15:41.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Produtos\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Produtos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\eduga\\OneDrive\\Documentos\\GitHub\\Trabalho_Linguagem_Programacao_.NET\\Trabalho_Linguagem_Programacao_.NET\\Views\\Produtos\\Details.cshtml",
+              "RelativeToolTip": "Views\\Produtos\\Details.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T17:09:13.905Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
