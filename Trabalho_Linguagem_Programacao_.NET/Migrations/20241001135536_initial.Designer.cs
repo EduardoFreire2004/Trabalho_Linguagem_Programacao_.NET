@@ -12,8 +12,8 @@ using Trabalho_Linguagem_Programacao_.NET.Models;
 namespace Trabalho_Linguagem_Programacao_.NET.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20240923190455_Pedidos")]
-    partial class Pedidos
+    [Migration("20241001135536_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -86,6 +86,42 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
                     b.ToTable("Fornecedores");
                 });
 
+            modelBuilder.Entity("Trabalho_Linguagem_Programacao_.NET.Models.Movimentacao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("clienteID")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("data")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("descricao")
+                        .HasMaxLength(35)
+                        .HasColumnType("nvarchar(35)");
+
+                    b.Property<int>("produtoID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("quantidade")
+                        .HasColumnType("int");
+
+                    b.Property<int>("tipo")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("clienteID");
+
+                    b.HasIndex("produtoID");
+
+                    b.ToTable("Movimentacoes");
+                });
+
             modelBuilder.Entity("Trabalho_Linguagem_Programacao_.NET.Models.Pedido", b =>
                 {
                     b.Property<int>("Id")
@@ -123,9 +159,8 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("categoria")
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
+                    b.Property<int>("categoria")
+                        .HasColumnType("int");
 
                     b.Property<string>("nome")
                         .IsRequired()
@@ -150,6 +185,25 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
                         .HasForeignKey("produtoID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("produto");
+                });
+
+            modelBuilder.Entity("Trabalho_Linguagem_Programacao_.NET.Models.Movimentacao", b =>
+                {
+                    b.HasOne("Trabalho_Linguagem_Programacao_.NET.Models.Cliente", "cliente")
+                        .WithMany()
+                        .HasForeignKey("clienteID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Trabalho_Linguagem_Programacao_.NET.Models.Produto", "produto")
+                        .WithMany()
+                        .HasForeignKey("produtoID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("cliente");
 
                     b.Navigation("produto");
                 });

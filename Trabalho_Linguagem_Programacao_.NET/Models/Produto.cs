@@ -1,9 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Data.SqlTypes;
+using System.Diagnostics;
 
 namespace Trabalho_Linguagem_Programacao_.NET.Models
 {
+    public enum Categoria { Insumo,Agrotoxico,Semente  };
+
     [Table("Produtos")]
     public class Produto
     {
@@ -17,9 +20,9 @@ namespace Trabalho_Linguagem_Programacao_.NET.Models
         [Display(Name = "Nome: ")]
         public string nome { get; set; }
 
-        [StringLength(25)]
+        
         [Display(Name = "Categoria: ")]
-        public String categoria { get; set; }
+        public Categoria categoria { get; set; }
 
 
         [Display(Name = "Preço: ")]
@@ -29,5 +32,9 @@ namespace Trabalho_Linguagem_Programacao_.NET.Models
         [Display(Name = "Quantidade em Estoque: ")]
         public int qtde_estoque { get; set; }
 
+        private string GetDebuggerDisplay()
+        {
+            return ToString();
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace Trabalho_Linguagem_Programacao_.NET.Models
 
         public DbSet<Pedido> Pedidos { get; set; }
 
-
+        public DbSet<Movimentacao> Movimentacoes { get; set; }
 
     }
 }

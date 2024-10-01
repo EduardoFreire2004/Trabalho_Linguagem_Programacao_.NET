@@ -45,6 +45,16 @@ namespace Trabalho_Linguagem_Programacao_.NET.Controllers
         // GET: Produtos/Create
         public IActionResult Create()
         {
+            var tCategoria = Enum.GetValues(typeof(Categoria))
+                   .Cast<Categoria>()
+                   .Select(e => new SelectListItem
+                   {
+                       Value = e.ToString(),
+                       Text = e.ToString()
+                   });
+
+            ViewBag.tCategoria = tCategoria;
+
             return View();
         }
 
@@ -77,6 +87,15 @@ namespace Trabalho_Linguagem_Programacao_.NET.Controllers
             {
                 return NotFound();
             }
+            var tCategoria = Enum.GetValues(typeof(Categoria))
+                   .Cast<Categoria>()
+                   .Select(e => new SelectListItem
+                   {
+                       Value = e.ToString(),
+                       Text = e.ToString()
+                   });
+
+            ViewBag.tCategoria = tCategoria;
             return View(produto);
         }
 

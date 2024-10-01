@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Trabalho_Linguagem_Programacao_.NET")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f08cfe8433aefbb9975d71458706699d686db231")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf19312f001ba76e3333e6dce936f0a68cb4a606")]
 [assembly: System.Reflection.AssemblyProductAttribute("Trabalho_Linguagem_Programacao_.NET")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Trabalho_Linguagem_Programacao_.NET")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
