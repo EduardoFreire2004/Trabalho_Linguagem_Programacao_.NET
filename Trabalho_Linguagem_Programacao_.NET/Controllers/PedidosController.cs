@@ -48,6 +48,18 @@ namespace Trabalho_Linguagem_Programacao_.NET.Controllers
         // GET: Pedidos/Create
         public IActionResult Create()
         {
+            var tStatus = Enum.GetValues(typeof(Status))
+                  .Cast<Status>()
+                  .Select(e => new SelectListItem
+                  {
+                      Value = e.ToString(),
+                      Text = e.ToString()
+                  });
+
+            ViewBag.tStatus = tStatus;
+
+
+
             ViewData["clienteID"] = new SelectList(_context.Clientes, "Id", "nome");
             ViewData["produtoID"] = new SelectList(_context.Produtos, "Id", "nome");
             return View();
@@ -58,14 +70,21 @@ namespace Trabalho_Linguagem_Programacao_.NET.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,data,clienteID,produtoID,quantidade")] Pedido pedido)
+        public async Task<IActionResult> Create([Bind("Id,data,clienteID,produtoID,quantidade,status,valor")] Pedido pedido)
         {
             if (ModelState.IsValid)
             {
+                var produto = await _context.Produtos.FindAsync(pedido.produtoID);      
+                pedido.valor = pedido.quantidade * produto.preco;
+                pedido.status = Status.Pendente;
+
                 _context.Add(pedido);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+         
+
             ViewData["clienteID"] = new SelectList(_context.Clientes, "Id", "nome", pedido.clienteID);
             ViewData["produtoID"] = new SelectList(_context.Produtos, "Id", "nome", pedido.produtoID);
             return View(pedido);
@@ -84,6 +103,17 @@ namespace Trabalho_Linguagem_Programacao_.NET.Controllers
             {
                 return NotFound();
             }
+
+            var tStatus = Enum.GetValues(typeof(Status))
+                  .Cast<Status>()
+                  .Select(e => new SelectListItem
+                  {
+                      Value = e.ToString(),
+                      Text = e.ToString()
+                  });
+
+            ViewBag.tStatus = tStatus;
+
             ViewData["clienteID"] = new SelectList(_context.Clientes, "Id", "nome", pedido.clienteID);
             ViewData["produtoID"] = new SelectList(_context.Produtos, "Id", "nome", pedido.produtoID);
             return View(pedido);
@@ -94,7 +124,7 @@ namespace Trabalho_Linguagem_Programacao_.NET.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,data,clienteID,produtoID,quantidade")] Pedido pedido)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,data,clienteID,produtoID,quantidade,status,valor")] Pedido pedido)
         {
             if (id != pedido.Id)
             {
@@ -105,6 +135,8 @@ namespace Trabalho_Linguagem_Programacao_.NET.Controllers
             {
                 try
                 {
+                    var produto = await _context.Produtos.FindAsync(pedido.produtoID);
+                    pedido.valor = pedido.quantidade * produto.preco;
                     _context.Update(pedido);
                     await _context.SaveChangesAsync();
                 }

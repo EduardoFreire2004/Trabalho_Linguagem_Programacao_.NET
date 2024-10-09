@@ -3,6 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Trabalho_Linguagem_Programacao_.NET.Models
 {
+    public enum Status { Entregue, Pendente };
+
     [Table("Pedidos")]
     public class Pedido
     {
@@ -28,6 +30,12 @@ namespace Trabalho_Linguagem_Programacao_.NET.Models
 
         [Display(Name = "Quantidade: ")]
         public int quantidade { get; set; }
+
+        [Display(Name = "Status: ")]
+        public Status status { get; set; }
+
+        [Display(Name = "Valor: ")]
+        public float valor { get; set; }
 
     }
 

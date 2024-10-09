@@ -31,7 +31,13 @@ namespace Trabalho_Linguagem_Programacao_.NET.Models
         [StringLength(35)]
         public Cliente cliente { get; set; }
         [Display(Name = "Cliente: ")]
-        public int clienteID { get; set; }
+        public int? clienteID { get; set; }
+
+        [Display(Name = "Fornecedor: ")]
+        [StringLength(35)]
+        public Fornecedor fornecedor { get; set; }
+        [Display(Name = "Fornecedor: ")]
+        public int? fornecedorID { get; set; }
 
         [Display(Name = "Descrição")]
         [StringLength(35)]

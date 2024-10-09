@@ -35,12 +35,25 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.quantidade)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.cliente)
+      
+        <dt class="col-sm-2">
+            Cliente/Fornecedor
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.cliente.nome)
+        <dd class="col-sm-10">
+            @if (Model.tipo == Tipo.Entrada && Model.fornecedor != null)
+            {
+                @Html.DisplayFor(model => model.fornecedor.nome)
+            }
+            else if (Model.tipo == Tipo.Saida && Model.cliente != null)
+            {
+                @Html.DisplayFor(model => model.cliente.nome)
+            }
+            else
+            {
+                <span>Nenhum cliente/fornecedor</span>
+            }
         </dd>
+
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.descricao)
         </dt>

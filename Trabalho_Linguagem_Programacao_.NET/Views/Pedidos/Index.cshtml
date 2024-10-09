@@ -25,6 +25,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.quantidade)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.valor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.status)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -43,6 +49,13 @@
             <td>
                 @Html.DisplayFor(modelItem => item.quantidade)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.valor)
+              </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.status)
+            </td>
+           
              <td>
                 <a asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square"></i></a>
                 <a asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-file-earmark-fill"></i></a>

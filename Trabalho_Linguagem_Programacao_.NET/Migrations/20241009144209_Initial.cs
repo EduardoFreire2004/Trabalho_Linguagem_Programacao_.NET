@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Trabalho_Linguagem_Programacao_.NET.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -66,36 +66,6 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Movimentacoes",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    data = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    tipo = table.Column<int>(type: "int", nullable: false),
-                    produtoID = table.Column<int>(type: "int", nullable: false),
-                    quantidade = table.Column<int>(type: "int", nullable: false),
-                    clienteID = table.Column<int>(type: "int", nullable: false),
-                    descricao = table.Column<string>(type: "nvarchar(35)", maxLength: 35, nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Movimentacoes", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Movimentacoes_Clientes_clienteID",
-                        column: x => x.clienteID,
-                        principalTable: "Clientes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Movimentacoes_Produtos_produtoID",
-                        column: x => x.produtoID,
-                        principalTable: "Produtos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Pedidos",
                 columns: table => new
                 {
@@ -104,7 +74,9 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
                     data = table.Column<DateTime>(type: "datetime2", nullable: false),
                     clienteID = table.Column<int>(type: "int", nullable: false),
                     produtoID = table.Column<int>(type: "int", nullable: false),
-                    quantidade = table.Column<int>(type: "int", nullable: false)
+                    quantidade = table.Column<int>(type: "int", nullable: false),
+                    status = table.Column<int>(type: "int", nullable: false),
+                    valor = table.Column<float>(type: "real", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -123,6 +95,41 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Movimentacoes",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    data = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    tipo = table.Column<int>(type: "int", nullable: false),
+                    produtoID = table.Column<int>(type: "int", nullable: false),
+                    quantidade = table.Column<int>(type: "int", nullable: false),
+                    clienteID = table.Column<int>(type: "int", nullable: true),
+                    fornecedorID = table.Column<int>(type: "int", nullable: true),
+                    descricao = table.Column<string>(type: "nvarchar(35)", maxLength: 35, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Movimentacoes", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Movimentacoes_Clientes_clienteID",
+                        column: x => x.clienteID,
+                        principalTable: "Clientes",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Movimentacoes_Fornecedores_fornecedorID",
+                        column: x => x.fornecedorID,
+                        principalTable: "Fornecedores",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Movimentacoes_Produtos_produtoID",
+                        column: x => x.produtoID,
+                        principalTable: "Produtos",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Fornecedores_produtoID",
                 table: "Fornecedores",
@@ -132,6 +139,11 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
                 name: "IX_Movimentacoes_clienteID",
                 table: "Movimentacoes",
                 column: "clienteID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Movimentacoes_fornecedorID",
+                table: "Movimentacoes",
+                column: "fornecedorID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Movimentacoes_produtoID",
@@ -153,13 +165,13 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Fornecedores");
-
-            migrationBuilder.DropTable(
                 name: "Movimentacoes");
 
             migrationBuilder.DropTable(
                 name: "Pedidos");
+
+            migrationBuilder.DropTable(
+                name: "Fornecedores");
 
             migrationBuilder.DropTable(
                 name: "Clientes");

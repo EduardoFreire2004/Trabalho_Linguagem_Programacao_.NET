@@ -12,8 +12,8 @@ using Trabalho_Linguagem_Programacao_.NET.Models;
 namespace Trabalho_Linguagem_Programacao_.NET.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20241001135701_Pedidos")]
-    partial class Pedidos
+    [Migration("20241009144209_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -94,7 +94,7 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("clienteID")
+                    b.Property<int?>("clienteID")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("data")
@@ -103,6 +103,9 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
                     b.Property<string>("descricao")
                         .HasMaxLength(35)
                         .HasColumnType("nvarchar(35)");
+
+                    b.Property<int?>("fornecedorID")
+                        .HasColumnType("int");
 
                     b.Property<int>("produtoID")
                         .HasColumnType("int");
@@ -116,6 +119,8 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("clienteID");
+
+                    b.HasIndex("fornecedorID");
 
                     b.HasIndex("produtoID");
 
@@ -141,6 +146,12 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
 
                     b.Property<int>("quantidade")
                         .HasColumnType("int");
+
+                    b.Property<int>("status")
+                        .HasColumnType("int");
+
+                    b.Property<float>("valor")
+                        .HasColumnType("real");
 
                     b.HasKey("Id");
 
@@ -193,9 +204,11 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
                 {
                     b.HasOne("Trabalho_Linguagem_Programacao_.NET.Models.Cliente", "cliente")
                         .WithMany()
-                        .HasForeignKey("clienteID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("clienteID");
+
+                    b.HasOne("Trabalho_Linguagem_Programacao_.NET.Models.Fornecedor", "fornecedor")
+                        .WithMany()
+                        .HasForeignKey("fornecedorID");
 
                     b.HasOne("Trabalho_Linguagem_Programacao_.NET.Models.Produto", "produto")
                         .WithMany()
@@ -204,6 +217,8 @@ namespace Trabalho_Linguagem_Programacao_.NET.Migrations
                         .IsRequired();
 
                     b.Navigation("cliente");
+
+                    b.Navigation("fornecedor");
 
                     b.Navigation("produto");
                 });

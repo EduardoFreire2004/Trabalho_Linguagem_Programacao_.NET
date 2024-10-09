@@ -26,7 +26,7 @@
                 @Html.DisplayNameFor(model => model.quantidade)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.cliente)
+                @Html.DisplayName("Cliente/Fornecedor")
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.descricao)
@@ -35,32 +35,44 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.data)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.tipo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.produto.nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.quantidade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.cliente.nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.descricao)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square"></i></a>
-                <a asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-file-earmark-fill"></i></a>
-                 <a asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash3-fill"></i></a>
-             </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.data)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.produto.nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.quantidade)
+                </td>
+                <td>
+                    @if (item.tipo == Tipo.Entrada && item.fornecedor != null)
+                    {
+                        @Html.DisplayFor(modelItem => item.fornecedor.nome)
+                    }
+                    else if (item.tipo == Tipo.Saida && item.cliente != null)
+                    {
+                        @Html.DisplayFor(modelItem => item.cliente.nome)
+                    }
+                    else
+                    {
+                        <span>Nenhum cliente/fornecedor</span>
+                    }
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.descricao)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-file-earmark-fill"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash3-fill"></i></a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
